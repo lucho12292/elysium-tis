@@ -119,6 +119,8 @@ return [
     |
     */       
 
+    'key' => 'pC+tQKYkKxkGmG/Kj5c2TDDX/MAo9Jhd2zePEz8JADg=',
+
     'cipher' => 'AES-256-CBC',
 
     /*
