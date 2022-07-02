@@ -117,9 +117,7 @@ return [
     | to a random, 32 character string, otherwise these encrypted strings
     | will not be safe. Please do this before deploying an application!
     |
-    */       
-
-    'key' => 'pC+tQKYkKxkGmG/Kj5c2TDDX/MAo9Jhd2zePEz8JADg=',
+    */           
 
     'cipher' => 'AES-256-CBC',
 
@@ -146,7 +144,7 @@ return [
         Illuminate\Foundation\Providers\ConsoleSupportServiceProvider::class,
         Illuminate\Cookie\CookieServiceProvider::class,
         Illuminate\Database\DatabaseServiceProvider::class,
-        //Illuminate\Encryption\EncryptionServiceProvider::class,
+        Illuminate\Encryption\EncryptionServiceProvider::class,
         Illuminate\Filesystem\FilesystemServiceProvider::class,
         Illuminate\Foundation\Providers\FoundationServiceProvider::class,
         Illuminate\Hashing\HashServiceProvider::class,
