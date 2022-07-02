@@ -106,6 +106,8 @@ return [
     |
     */
 
+    'key' => env('APP_KEY'),
+
     'faker_locale' => 'en_US',
 
     /*
