@@ -117,9 +117,7 @@ return [
     | to a random, 32 character string, otherwise these encrypted strings
     | will not be safe. Please do this before deploying an application!
     |
-    */
-
-    'key' => env('APP_KEY', '1234'),
+    */   
 
     'cipher' => 'AES-256-CBC',
 
