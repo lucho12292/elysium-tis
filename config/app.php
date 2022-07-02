@@ -104,9 +104,7 @@ return [
     | data for your database seeds. For example, this will be used to get
     | localized telephone numbers, street address information and more.
     |
-    */
-
-    'key' => env('APP_KEY'),
+    */ 
 
     'faker_locale' => 'en_US',
 
@@ -119,9 +117,11 @@ return [
     | to a random, 32 character string, otherwise these encrypted strings
     | will not be safe. Please do this before deploying an application!
     |
-    */           
+    */         
+    
+    'key' => env('APP_KEY'),
 
-    'cipher' => 'AES-128-CBC',
+    'cipher' => 'AES-256-CBC',
 
     /*
     |--------------------------------------------------------------------------
