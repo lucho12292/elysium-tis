@@ -104,18 +104,18 @@ class PlayerController extends Controller
      */
     public function update(Request $request, Player $player)
     {
-        if(Player::where('id', $id)->exists())
+        if(Player::where('id', $request->id)->exists())
         {
-            $player = Player::find($id);
-            $player->name = $currentplayer->name;
-            $player->lastname = $currentplayer->lastname;
-            $player->position = $currentplayer->position;
-            $player->document_id = $currentplayer->document_id;
-            $player->height = $currentplayer->height;
-            $player->weight = $currentplayer->weight;
-            $player->country = $currentplayer->country;
-            $player->team_id = $currentplayer->team_id;
-            $player->picture = $currentplayer->picture;
+            $player = Player::find($request->id);
+            $player->name = $request->name;
+            $player->lastname = $request->lastname;
+            $player->position = $request->position;
+            $player->document_id = $request->document_id;
+            $player->height = $request->height;
+            $player->weight = $request->weight;
+            $player->country = $request->country;
+            $player->team_id = $request->team_id;
+            $player->picture = $request->picture;
             $player->save();
 
             return response()->json([

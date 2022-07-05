@@ -36,7 +36,7 @@ Route::resource('matches', MatchController::class);
 Route::resource('staff', StaffController::class);
 Route::resource('players', PlayerController::class);
 Route::post('login', [LoginController::class, 'login']);
-Route::post('players/insertMany', 'PlayerController@insertMany');
+//Route::post('players/insertMany', 'PlayerController@insertMany');
 Route::resource('stats', PlayerStatsController::class);
 Route::resource('registration', RegistrationController::class);
 Route::put('registration', [RegistrationController::class, 'update']);
